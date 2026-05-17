@@ -2,7 +2,7 @@ import { createServer } from "node:http";
 import { readFile } from "node:fs/promises";
 import { extname, join, normalize } from "node:path";
 
-const root = import.meta.dirname;
+const root = join(import.meta.dirname, "public");
 const port = Number.parseInt(process.env.PORT || "5173", 10);
 const orsApiKey = process.env.ORS_API_KEY || "eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6IjkyNDA1ODQzODA4NzQ1MDU4NGJkY2M0NWY0MGU5NDkzIiwiaCI6Im11cm11cjY0In0=";
 
